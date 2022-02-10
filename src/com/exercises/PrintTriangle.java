@@ -1,4 +1,4 @@
-package com.careerdevs;
+package com.exercises;
 
 public class PrintTriangle {
 
