@@ -6,10 +6,17 @@ public class NumberBaseSystem {
 
     public static void main(String[] args) {
 
-//        System.out.println(convertDecimal(5, 3));
-//        System.out.println(convertDecimal(3, 3));
 
 
+        for( int decimal = 1; decimal < 100; decimal++){
+            for (int base = 2; base < 10; base++){
+
+                System.out.println(decimal + "'s form in base " + base + " is: " +
+                        convertDecimal(decimal, base));
+            }
+
+            System.out.println("");
+        }
     }
 
     public static String convertDecimal(int decimal, int base){
