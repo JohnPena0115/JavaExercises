@@ -14,10 +14,10 @@ public class NumberBaseSystem {
 
     public static String convertDecimal(int decimal, int base){
 
-        Stack<Integer> stack = new Stack<Integer>();
+        Stack<Integer> stack = new Stack<>();
 
-        int baseDigit = -1;
-        String baseString = "";
+        int baseDigit;
+        StringBuilder baseString = new StringBuilder();
 
 
         while (decimal != 0) {
@@ -29,11 +29,11 @@ public class NumberBaseSystem {
 
         while(!stack.isEmpty()){
 
-            baseString += stack.pop();
+            baseString.append(stack.pop());
 
         }
 
-        return baseString;
+        return baseString.toString();
 
     }
 }
