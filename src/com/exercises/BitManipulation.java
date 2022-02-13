@@ -4,20 +4,18 @@ public class BitManipulation {
 
     public static void main(String[] args) {
 
-        int decimalSubstitute = 1;
+        int decimal = 1;
 
-        while( decimalSubstitute <= 1000) {
+        while( decimal <= 100) {
 
             System.out.println("Number of consecutive 1's in binary form of  " +
-                    decimalSubstitute + " => " +
-                    binaryConsecutiveOnes(decimalSubstitute) );
-            decimalSubstitute++;
+                    decimal + " => " + binaryConsecutiveOnes(decimal) );
+
+            System.out.println("Binary from of " + decimal + " => " +
+                    Integer.toBinaryString(decimal) + "\n");
+
+            decimal++;
         }
-
-
-
-
-
     }
 
     public static int binaryConsecutiveOnes(int number) {
