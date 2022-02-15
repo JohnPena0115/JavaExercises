@@ -6,7 +6,7 @@ public class NumberBaseSystem {
 
     public static void main(String[] args) {
 
-        decimalBaseForms(1,100);
+        decimalBaseForms(4,10);
 
     }
 
@@ -37,13 +37,15 @@ public class NumberBaseSystem {
 
     public static void decimalBaseForms(int startValue, int iterations){
 
-        for (int currentValue = startValue; currentValue <= iterations; currentValue++){
+        for (int currentValue = startValue; currentValue <= iterations + startValue; currentValue++){
+
+            System.out.println("");
+
             for(int base = 2; base <= 10; base++){
 
                 System.out.println(currentValue + "'s form in base " + base + " is: " +
                         convertDecimal(currentValue, base));
             }
-            System.out.println("");
         }
 
 
