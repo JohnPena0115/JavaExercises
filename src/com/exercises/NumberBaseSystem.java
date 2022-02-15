@@ -8,15 +8,17 @@ public class NumberBaseSystem {
 
 
 
-        for( int decimal = 1; decimal < 100; decimal++){
-            for (int base = 2; base < 10; base++){
+//        for( int decimal = 1; decimal <= 100; decimal++){
+//            for (int base = 2; base <= 10; base++){
+//
+//                System.out.println(decimal + "'s form in base " + base + " is: " +
+//                        convertDecimal(decimal, base));
+//            }
+//
+//            System.out.println("");
+//        }
 
-                System.out.println(decimal + "'s form in base " + base + " is: " +
-                        convertDecimal(decimal, base));
-            }
-
-            System.out.println("");
-        }
+        decimalBaseForms(1,10);
     }
 
     public static String convertDecimal(int decimal, int base){
@@ -41,6 +43,20 @@ public class NumberBaseSystem {
         }
 
         return baseString.toString();
+
+    }
+
+    public static void decimalBaseForms(int startValue, int iterations){
+
+        for (int currentValue = startValue; currentValue <= iterations; currentValue++){
+            for(int base = 2; base <= 10; base++){
+
+                System.out.println(currentValue + "'s form in base " + base + " is: " +
+                        convertDecimal(currentValue, base));
+            }
+            System.out.println("");
+        }
+
 
     }
 }
