@@ -6,19 +6,8 @@ public class NumberBaseSystem {
 
     public static void main(String[] args) {
 
+        decimalBaseForms(1,100);
 
-
-//        for( int decimal = 1; decimal <= 100; decimal++){
-//            for (int base = 2; base <= 10; base++){
-//
-//                System.out.println(decimal + "'s form in base " + base + " is: " +
-//                        convertDecimal(decimal, base));
-//            }
-//
-//            System.out.println("");
-//        }
-
-        decimalBaseForms(1,10);
     }
 
     public static String convertDecimal(int decimal, int base){
